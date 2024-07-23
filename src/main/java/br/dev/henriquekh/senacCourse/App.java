@@ -20,5 +20,9 @@ public class App {
 
         Computer computer = new Computer(true, 0x1000);
         computer.displayStatus();
+
+        Movie movie = new Movie("Your Name", new String[] { "Ryunosuke Kamiki",
+                "Mone Kamishiraishi" }, "Makoto Shinkai", 2016, "tt12345678");
+        movie.displayInfo();
     }
 }
