@@ -17,5 +17,8 @@ public class App {
         Book book = new Book();
         book.author = "George Orwell";
         book.title = "1984";
+
+        Computer computer = new Computer(true, 0x1000);
+        computer.displayStatus();
     }
 }
