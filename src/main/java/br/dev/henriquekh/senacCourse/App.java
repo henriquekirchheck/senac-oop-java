@@ -13,5 +13,9 @@ public class App {
         Product product = new Product("Sonic The Hedgehog 2 - Com uma linha", Float.POSITIVE_INFINITY, 1);
         System.out.println(String.format("Produto: %s\n\tPreço: %f\n\tQuantidade: %d", product.getName(),
                 product.getPrice(), product.getQuantity()));
+
+        Book book = new Book();
+        book.author = "George Orwell";
+        book.title = "1984";
     }
 }
