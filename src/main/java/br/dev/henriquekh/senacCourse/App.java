@@ -1,5 +1,7 @@
 package br.dev.henriquekh.senacCourse;
 
+import java.time.LocalDate;
+
 public class App {
     public static void main(String[] args) throws Exception {
         System.out.println("Hello World!");
@@ -37,6 +39,10 @@ public class App {
         System.out.printf("%s (%d horas)\n", course.getName(), ((int) course.getDurationHours()));
 
         Worker worker = new Worker("Art McArtist", 0);
-        System.out.printf("%s (R$%.02f)\n", worker.getName(), ((int) worker.getSalary()));
+        System.out.printf("%s (R$%.02f)\n", worker.getName(), worker.getSalary());
+
+        Person henrique = new Person("Henrique", "123.456.789-10", LocalDate.parse("2007-04-20"), "Desempregado",
+                "Meio do nada", "Azul");
+        henrique.displayInfo();
     }
 }
