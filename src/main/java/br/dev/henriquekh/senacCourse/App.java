@@ -41,9 +41,10 @@ public class App {
                 Worker worker = new Worker("Art McArtist", 0);
                 System.out.printf("%s (R$%.02f)\n", worker.getName(), worker.getSalary());
 
-                Person henrique = new Person("Henrique", "123.456.789-10", LocalDate.parse("2007-04-20"),
-                                "Desempregado",
-                                "Meio do nada", "Azul");
+                Person henrique = new Person("Henrique", "123.456.789-10", "test@lol.com", "(99) 91212-1212",
+                                LocalDate.parse("2007-04-20"),
+                                "Desempregado", 0,
+                                "Meio do nada", "Azul", "Brasileiro", new Man(), MaritalStatus.Single, 0);
                 henrique.displayInfo();
 
         }
