@@ -6,13 +6,15 @@ public class Movie {
     private String director;
     private int year;
     private String imdbId;
+    private AgeRating ageRating;
 
-    Movie(String title, String[] actors, String director, int year, String imdbId) {
+    Movie(String title, String[] actors, String director, int year, String imdbId, AgeRating ageRating) {
         this.title = title;
         this.actors = actors;
         this.director = director;
         this.year = year;
         this.imdbId = imdbId;
+        this.ageRating = ageRating;
     }
 
     public String[] getActors() {
@@ -35,6 +37,10 @@ public class Movie {
         return title;
     }
 
+    public AgeRating getAgeRating() {
+        return ageRating;
+    }
+
     public void displayInfo() {
         System.out.printf("%s (%d) [%s]\n", getTitle(), getYear(), getImdbId());
         System.out.printf("\tDirector: %s\n", getDirector());
@@ -42,5 +48,6 @@ public class Movie {
         for (String actor : getActors()) {
             System.out.printf("\t- %s\n", actor);
         }
+        System.out.printf("\tIdade Minima: %d\n", getAgeRating().getMinimumAge());
     }
 }

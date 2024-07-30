@@ -23,7 +23,7 @@ public class App {
                 computer.displayStatus();
 
                 Movie movie = new Movie("Your Name", new String[] { "Ryunosuke Kamiki",
-                                "Mone Kamishiraishi" }, "Makoto Shinkai", 2016, "tt12345678");
+                                "Mone Kamishiraishi" }, "Makoto Shinkai", 2016, "tt12345678", AgeRating.Age12);
                 movie.displayInfo();
 
                 City city = new City("Llanfairpwllgwyngyllgogerychwyrndrobwllllantysiliogogogoch", 3106);
